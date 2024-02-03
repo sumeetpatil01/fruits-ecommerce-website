@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="e-commerce.css">
+    <script src="e-commerce.js"></script>
+    
+</head>
+
+<body>
+    <header>
+        <h1>Apna Bazaar</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/cart">Cart</a>
+            <a href="/checkout">Checkout</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for fruits...">
+            <button onclick="searchFruits()">Search</button>
+        </div>
+    </header>
+    <main>
+        <div  class="product0">
+            <img src="https://img.freepik.com/free-photo/top-close-up-view-apples-citrus-fruits-cherries-apples-board-apples_140725-78529.jpg?size=626&ext=jpg"
+                alt="Fruits">
+            <h2>Apple</h2>
+            <p>Apples are a good source of fiber, vitamin C, and antioxidants like vitamin E and polyphenols..</p>
+            <span>Rs 340 per kg </span>
+            <button data-product="Apple" data-price="340" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        <div class="product1">
+            <img src="https://media.istockphoto.com/id/94929126/photo/avocados-isolated-on-white.jpg?s=612x612&w=0&k=20&c=c0BSuWnUTAkZyj-cYHKzR5dXtZWQ1_3PXcea3M92Z4I="
+                alt="AVOCADOS">
+            <h2>Avocados</h2>
+            <p>Avocados are a rich source of vitamins and minerals, including folate, potassium, vitamin C, and vitamin
+                B6.</p>
+            <span>Rs 350 per kg </span>
+            <button data-product="Avocados" data-price="350" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        <div class="product2">
+            <img src="https://media.istockphoto.com/id/1400057530/photo/bananas-isolated.jpg?s=612x612&w=0&k=20&c=KLtV4quCnxwWOOx_uUJTQUTl9VVJzA72ykrQlc8P6a0="
+                alt="BANANAS">
+            <h2>Bannana</h2>
+            <p>Bananas are a good source of several vitamins and minerals, including potassium, vitamin B6, and vitamin C.</p>
+            <span>Rs 15 per kg </span>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="product3">
+            <img src="https://media.istockphoto.com/id/172315512/photo/sweet-cherries.jpg?s=612x612&w=0&k=20&c=qz6b92ZkcMTH5XtZUMI7CW7CQPkYFo1qAWoHX48VQk4="
+                alt="CHERRIES">
+            <h2>Cherries</h2>
+            <p>Fresh cherries are rich in vitamins and minerals, including vitamin C, which helps the body absorb iron, produce collagen, and defend against cell damage.</p>
+            <span>Rs 175 per kg </span>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="product4">
+            <img src="https://media.gettyimages.com/id/135606958/photo/dates.jpg?s=612x612&w=0&k=20&c=Lj2W9kE1cwG0DhWerx1dZ039O5J6BULRSdKycu6wp1I="
+                alt="DATES">
+            <h2>Dates</h2>
+            <p>Dates are a fruit cultivated from date palm (Phoenix dactylifera), a plant native to the Middle East and North Africa.</p>
+            <span>Rs 200 per kg </span>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="product5">
+            <img src="https://t3.ftcdn.net/jpg/00/90/40/42/360_F_90404208_yMuUz1uJsGTvIJhz9WzTehOBnjJZnTFc.jpg"
+                alt="GRAPES">
+            <h2>Grapes</h2>
+            <p>Green grapes are a good source of vitamins and minerals, including high levels of Vitamin C and Vitamin K.</p>
+            <span>Rs 90 per kg </span>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="product6">
+            <img src="https://media.gettyimages.com/id/171575811/photo/guava.jpg?s=612x612&w=0&k=20&c=cjVDpisFrT8JlqFbSEImkfsXgQbtrNCdSTILGAzIj2Q="
+                alt="GUAVA">
+            <h2>Guava</h2>
+            <p>Guava fruits and leaves are rich in antioxidants, vitamin C, potassium, fiber, lycopene, calcium, manganese, phosphorus, magnesium, zinc, calcium, and iron.</p>
+            <span>Rs 60 per kg </span>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div  class="product7">
+            <img src="https://media.istockphoto.com/id/690475352/photo/melon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=8XHJZMNzQrlUCBLYCvgyFqfHp6sOZD9b2dTWxssSsD0="
+                alt="Melons">
+            <h2 id= "Melons" >Melons</h2>
+            <p>Melons, including cantaloupe, honeydew, and watermelon, are a good source of vitamins A, C, potassium, and folate. </p>
+            <span>Rs 110 per kg </span>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="product8">
+            <img src="https://media.gettyimages.com/id/482728017/photo/kiwi.jpg?s=612x612&w=0&k=20&c=bBHFCNDXhcD2zRc6YmkrZu6ytTwMUeSRRdM1VVc1Dog="
+                alt="KIWIS">
+            <h2>Kiwis</h2>
+            <p>Kiwifruit is a healthy fruit that is high in vitamin C, dietary fiber, potassium, vitamin E, and folate. </p>
+            <span>Rs 150 per kg </span>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="product9">
+            <img src="https://t4.ftcdn.net/jpg/00/44/72/23/360_F_44722368_6jFsh6s5PRWV6Z0JH06zuuPUxW03boaX.jpg"
+                alt="MANGOES">
+            <h2>mangoes</h2>
+            <p>Mangoes are a superfood that contain over 20 vitamins and minerals, including vitamins A, C, and B6.  </p>
+            <span>Rs 540 per kg </span>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="product10">
+            <img src="https://naturallist1.wpengine.com/wp-content/uploads/2022/02/Orange-Fruits-1.jpg"
+                alt="ORANGES">
+            <h2>Oranges</h2>
+            <p>Vitamin E
+                1% 0.18 mg</p>
+            <span>Rs 32 per kg </span>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="product11">
+            <img src="https://media.istockphoto.com/id/452352231/photo/pineapple.jpg?s=612x612&w=0&k=20&c=BioDwSdBPMlCpc56389y9JUsAJFGXkk5gr14R4hxikY="
+                alt="PINEAPPLE">
+            <h2>Pineapple</h2>
+            <p>Pineapple contains nutrients and beneficial compounds, such as vitamin C, manganese, and enzymes, to help aid digestion.</p>
+            <span>Rs 24 per kg </span>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="product12">
+            <img src="https://media.istockphoto.com/id/692542394/photo/strawberry.jpg?s=612x612&w=0&k=20&c=YLQH2ohcvEI3HBX3ezrzVJ2DYR2wekdJ6ssb6yF6b90="
+                alt="STRAWBERRIES">
+            <h2>Strawberries</h2>
+            <p>Strawberries are a great source of vitamins and minerals, including vitamin C, manganese, folate (vitamin B9), and potassium.</p>
+            <span>Rs 300 per kg </span>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="product13">
+            <img src="https://media.istockphoto.com/id/157636928/photo/watermelon.jpg?s=612x612&w=0&k=20&c=e1MrGdy3iFnFg0CJpMaB9_Eyx3_yd6x6b0DF8IhQD-s="
+                alt="WATERMELON">
+            <h2>Watermelon</h2>
+            <p>Watermelon is a nutritious and low-calorie fruit that contains a variety of nutrients, including potassium, magnesium, vitamins A and C, and antioxidants like carotenoids, lycopene, and cucurbitacin E.</p>
+            <span>Rs 100 per kg </span>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 Apna Bazaar. All rights reserved.
+    </footer>
+    
+</body>
+
+</html>
